@@ -1,37 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <style id="webmakerstyle">
-      body {
-        color: hsl(255 38% 30%);
-      }
-      #center {
-        display: grid;
-        place-items: center;
-        min-block-size: 100vh;
-      }
-      .comingsoon {
-        text-align: center;
-        font-size: 3rem;
-      }
-    </style>
-    <title>Coming soon | Cross Key Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cross Key Studios | Digital marketing</title>
   </head>
+
   <body>
-    <div id="center">
-      <div>
-        <p class="logo">
-          <img src="ckslogo.svg" alt="Cross Key Studios logo" />
-        </p>
-        <p class="comingsoon">Coming soon...</p>
-        <p class="contact">
-          Until then you can contact us at
-          <a href="mailto:info@crosskeystudios.com">info@crosskeystudios.com</a>
-          or call/text 80-CROSS-KEY
-        </p>
-      </div>
+    <header>
+      <h1><img src="ckslogo.svg" alt="Cross Key Studios" /></h1>
+    </header>
+
+    <div class="hero">
+      <p>Beyond web design.</p>
+      <p>Digital marketing.</p>
+      <p>
+        The <strong class="font-logo color-brand">key</strong> to your online
+        success.
+      </p>
     </div>
+
+    <main>
+      <section class="whatwedo" id="whatwedo">
+        <h2>What we do</h2>
+        <p>
+          We create websites as part of an overall digital marketing strategy.
+          We can help find the best way possible to convert page views into new
+          clients.
+        </p>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2>What we've done</h2>
+        <div>
+          <h3>TnT Cakery</h3>
+          <img src="tnt.png" alt="TnT Cakery homepage" />
+        </div>
+
+        <div>
+          <h3>IGNiTE GODS LITE</h3>
+          <img src="ignite.png" alt="IGL homepage" />
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Hire CKS</h2>
+        <form action="https://submit-form.com/JvwsNErL" method="post">
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://surber.us/contact/thanks"
+          />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="_email.from"
+            placeholder="Name"
+            required=""
+          />
+          <label for="email">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Company"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="_email.replyto"
+            placeholder="Email"
+            required=""
+          />
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="_email.subject"
+            placeholder="Subject"
+            required=""
+          />
+          <label for="message">How can we help?</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Briefly describe the project we can help you with"
+            required=""
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

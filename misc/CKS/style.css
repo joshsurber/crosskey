@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+:root {
+  --space: 1px;
+  --size: 1px;
+  --color: hsl(225 40% 50%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: flex;
+}
+img {
+  height: 100px;
+  margin-right: var(--space);
+  padding-right: var(--space);
+  border-right: 1px solid;
+}
+span {
+  font-family: "League Gothic", sans-serif;
+  font-style: italic;
+  font-size: var(--size);
+  color: var(--color);
+}
+.stacked {
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.stacked > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
